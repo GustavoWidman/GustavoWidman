@@ -36,7 +36,6 @@
 <div align="center">
   <p align="center">
     I am a <b>Backend and Low Level Engineer</b> & <b>Computer Engineering Student</b> at INTELI. <br />
-    Currently serving as <b>CTO at CamelSec</b>. <br />
     Specializing in <b>Systems Programming</b>, <b>NixOS Infrastructure</b>, and <b>Red Teaming</b>.
   </p>
 </div>
