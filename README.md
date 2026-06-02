@@ -4,7 +4,7 @@
   </a>
 
   <a href="https://guswid.com">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&pause=1000&color=A1A1AA&center=true&vCenter=true&width=600&lines=Building+the+kernel...;Hardening+the+infrastructure...;Scaling+the+backend...;CTO+%40+CamelSec" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=24&pause=1000&color=A1A1AA&center=true&vCenter=true&width=600&lines=Building+systems+software...;Working+close+to+the+metal...;Hardening+infrastructure...;Rust+Software+Developer+%40+Azion" alt="Typing SVG" />
   </a>
 </div>
 
@@ -35,8 +35,8 @@
 
 <div align="center">
   <p align="center">
-    I am a <b>Backend and Low Level Engineer</b> & <b>Computer Engineering Student</b> at INTELI. <br />
-    Specializing in <b>Systems Programming</b>, <b>NixOS Infrastructure</b>, and <b>Red Teaming</b>.
+    I am a <b>Systems and Low-Level Engineer</b> & <b>Computer Engineering Student</b> at INTELI. <br />
+    Focused on <b>Systems Programming</b>, <b>HPC</b>, and <b>Low-Level Software</b>, with <b>Infrastructure</b> and <b>Cybersecurity</b> as secondary tracks.
   </p>
 </div>
 
@@ -56,7 +56,7 @@
 
 <br />
 
-<!-- BACKEND -->
+<!-- GENERAL PURPOSE -->
 <img src="https://img.shields.io/badge/Go-000000?style=for-the-badge&logo=go&logoColor=white" />
 <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Postgres-000000?style=for-the-badge&logo=postgresql&logoColor=white" />
