@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://guswid.com">
     <img
-      src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=42&duration=2600&pause=900&color=FFFFFF&background=000000&center=true&vCenter=true&width=900&height=92&lines=GUSTAVO+WIDMAN;RUST+PLATFORM+%26+DISTRIBUTED+SYSTEMS"
+      src="https://readme-typing-svg.herokuapp.com/?font=Jetbrains+Mono&weight=700&size=42&duration=2600&pause=900&color=FFFFFF&center=true&vCenter=true&repeat=false&width=900&height=92&lines=GUSTAVO+WIDMAN"
       alt="Gustavo Widman - Rust Platform & Distributed Systems"
     />
   </a>
@@ -27,7 +27,7 @@ systems under load. rust on the hot path. infrastructure that doesn't drift.
 
 - Building Rust systems for edge/CDN workloads at Azion.
 - Working on platform code where latency, failure modes, and operational clarity matter.
-- Researching FerriSync: rsync-style synchronization for multi-gigabit networks.
+- Researching ferrisync: rsync-style synchronization for multi-gigabit networks.
 - Keeping infrastructure reproducible with NixOS, WireGuard, and predictable deployment paths.
 
 ## operating range
@@ -44,9 +44,9 @@ systems under load. rust on the hot path. infrastructure that doesn't drift.
 | project | why it matters |
 | --- | --- |
 | [upstreamer](https://github.com/GustavoWidman/upstreamer) | Rust reverse proxy with Kubernetes discovery, hot reload, health checks, Prometheus metrics, and published benchmarks. |
-| [FerriSync](https://guswid.com/blog/modernizing-rsync) | File synchronization research around rolling-hash bottlenecks, cache-aware lookup, and multi-core delta computation. |
-| [NixOS infrastructure](https://github.com/GustavoWidman/nix) | Declarative hosts, VPNs, DNS, mail, service deployment, and machine setup without global drift. |
-| [x86-64 kernel](https://github.com/GustavoWidman/based-kernel) | Rust `no_std` kernel with boot code, paging, interrupts, allocator work, and VGA output. |
+| [ferrisync](https://github.com/GustavoWidman/ferrisync) | File synchronization research around rolling-hash bottlenecks, cache-aware lookup, and multi-core delta computation. |
+| [nix](https://github.com/GustavoWidman/nix) | Declarative hosts, VPNs, DNS, mail, service deployment, and machine setup without global drift. |
+| [based-kernel](https://github.com/GustavoWidman/based-kernel) | Rust `no_std` kernel with boot code, paging, interrupts, allocator work, and VGA output. |
 
 ## stack
 
