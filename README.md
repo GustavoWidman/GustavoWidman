@@ -16,6 +16,15 @@
     <a href="https://linkedin.com/in/gustavo-widman"><img src="assets/badges/linkedin.svg" alt="LinkedIn" /></a>
     <a href="mailto:gustavowidman@gmail.com"><img src="assets/badges/email.svg" alt="Email" /></a>
     <a href="https://guswid.com/resume-en.pdf"><img src="assets/badges/resume.svg" alt="Resume" /></a>
+    <br />
+    <img src="assets/badges/rust.svg" alt="Rust" />
+    <img src="assets/badges/c.svg" alt="C" />
+    <img src="assets/badges/x86-64.svg" alt="x86-64" />
+    <img src="assets/badges/linux.svg" alt="Linux" />
+    <img src="assets/badges/nixos.svg" alt="NixOS" />
+    <img src="assets/badges/wireguard.svg" alt="WireGuard" />
+    <img src="assets/badges/kubernetes.svg" alt="Kubernetes" />
+    <img src="assets/badges/postgresql.svg" alt="PostgreSQL" />
   </p>
 </div>
 
@@ -61,18 +70,6 @@ systems under load. rust on the hot path. infrastructure that doesn't drift.
     src="https://gustavowidman.github.io/GustavoWidman/streak-stats.svg"
     alt="Gustavo Widman's GitHub streak"
   />
-</p>
-
-
-<p align="center">
-  <img src="assets/badges/rust.svg" alt="Rust" />
-  <img src="assets/badges/c.svg" alt="C" />
-  <img src="assets/badges/x86-64.svg" alt="x86-64" />
-  <img src="assets/badges/linux.svg" alt="Linux" />
-  <img src="assets/badges/nixos.svg" alt="NixOS" />
-  <img src="assets/badges/wireguard.svg" alt="WireGuard" />
-  <img src="assets/badges/kubernetes.svg" alt="Kubernetes" />
-  <img src="assets/badges/postgresql.svg" alt="PostgreSQL" />
 </p>
 
 <div align="center">
