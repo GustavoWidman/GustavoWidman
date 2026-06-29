@@ -1,0 +1,55 @@
+name: Generate GitHub Readme Stats
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/github-readme-stats.yml"
+  schedule:
+    - cron: "0 3,15 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate stats card SVG
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=GustavoWidman&show_icons=true&hide_border=true&bg_color=000000&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff
+          path: github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate streak stats SVG
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=GustavoWidman&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=a1a1aa&dates=71717a&sideNums=ffffff&currStreakNum=ffffff
+          path: streak-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stage SVGs for Pages
+        run: |
+          mkdir -p _pages
+          cp github-stats.svg _pages/
+          cp streak-stats.svg _pages/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
