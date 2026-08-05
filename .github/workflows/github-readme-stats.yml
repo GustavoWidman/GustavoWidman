@@ -31,7 +31,7 @@ jobs:
           card: stats
           options: username=GustavoWidman&show_icons=true&hide_border=true&bg_color=000000&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff
           path: github-stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.README_STATS_TOKEN }}
 
       - name: Generate streak stats SVG
         uses: DenverCoder1/github-readme-streak-stats@main
@@ -39,6 +39,20 @@ jobs:
           options: user=GustavoWidman&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=a1a1aa&dates=71717a&sideNums=ffffff&currStreakNum=ffffff
           path: streak-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify generated cards
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for file in github-stats.svg streak-stats.svg; do
+            test -s "$file"
+
+            if grep -Eq 'Something went wrong|Resource not accessible|file an issue at' "$file"; then
+              echo "::error file=$file::stats renderer returned an error card"
+              exit 1
+            fi
+          done
 
       - name: Stage SVGs for Pages
         run: |
